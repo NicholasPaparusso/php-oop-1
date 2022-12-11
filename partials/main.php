@@ -15,6 +15,7 @@
         <h3 class="title" ><?php echo $movie->title ?></h3>
         <h3 class="it-title"><?php echo $movie->getTitle($movie->title, $movie->itTitle) ?></h3>
         <span class="director" >Regista: <?php echo $movie->director ?></span>
+        <span class="director" >Anno di uscita: <?php echo $movie->date ?></span>
         <span class="genre" >Genere: <?php echo $movie->getGenre() ?></span>
         <span class="vote" >Media Gradimento: <?php echo $movie->vote ?>/5</span>
         <div class="cast">
