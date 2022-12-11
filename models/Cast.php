@@ -16,5 +16,9 @@ class Cast{
     $this->coStar = $_coStar;
     $this->actors = $_actors;
   }
+
+  public function getCast(){
+    return join(', ' , $this->actors);
+  }
 }
 ?>

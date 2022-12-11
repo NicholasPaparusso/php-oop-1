@@ -20,8 +20,9 @@ public $cast;
  * @param Cast $cast
  */
 
-public function __construct($_director , $_title, $_date, $_poster, $_genre  , $_vote, Cast $_cast){
+public function __construct($_director ,$_itTitle, $_title, $_date, $_poster, $_genre  , $_vote, Cast $_cast){
   $this->director = $_director;
+  $this->itTitle = $_itTitle;
   $this->title =  $_title ; 
   $this->date = $_date ;
   $this->poster = $_poster ;
@@ -30,17 +31,14 @@ public function __construct($_director , $_title, $_date, $_poster, $_genre  , $
   $this->cast = $_cast ;
  }
 
-public function setTitle($_itTitle){
-$this->itTitle = $_itTitle;
-}
 
-public function getTitle(){
-  $showedTitle = $this->title ;
-
-  if(!empty($this->itTitle) && $this->itTitle != $this->title){
-    $showedTitle = $this->itTitle;
+public static function getTitle($_title, $_itTitle){
+  if($_itTitle == $_title){
+    $_itTitle = "";
+  }else{
+   return $_itTitle ;
   }
-  return $showedTitle;
+  
 }
 
 public function getGenre(){

@@ -21,17 +21,17 @@ buon ponte! :sciatore:
  include_once './models/Cast.php';
  include_once './models/Movie.php';
 
- $movie1 = new Movie("Ridley Scott", "American Gangstar", "2007", "https://mr.comingsoon.it/imgdb/locandine/big/856.jpg", ['Poliziesco' ,'Drammatico'] , "4,6", new Cast("Denzel Washington", "Russel Crowe", ['Chiwetel Ejiofor','Josh Brolin','Cuba Gooding Jr.']) );
+ $movie1 = new Movie("Ridley Scott", "American Gangstar", "American Gangstar", "2007", "https://mr.comingsoon.it/imgdb/locandine/big/856.jpg", ['poliziesco' ,'drammatico'] , "4,6", new Cast("Denzel Washington", "Russel Crowe", ['Chiwetel Ejiofor','Josh Brolin','Cuba Gooding Jr']) );
 
- $movie2 = new Movie("Ridley Scott", "American Gangstar", "2007", "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", ['Poliziesco' ,'Drammatico'] , "4,6", new Cast("Denzel Washington", "Russel Crowe", ['Chiwetel Ejiofor','Josh Brolin','Cuba Gooding Jr.']) );
+  $movie2 = new Movie("Martin Scorsese","Quei Bravi Ragazzi", "Goodfellas", "	1990", "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", ['biografico', 'noir', 'gangster', 'drammatico'] , "4,4", new Cast("Ray Liotta", "Robert De Niro", ['Joe Pesci','Lorraine Bracco','Paul Sorvino']) );
 
- $movie3 = new Movie("Ridley Scott", "American Gangstar", "2007", "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", ['Poliziesco' ,'Drammatico'] , "4,6", new Cast("Denzel Washington", "Russel Crowe", ['Chiwetel Ejiofor','Josh Brolin','Cuba Gooding Jr.']) );
+  $movie3 = new Movie("Ted Demme", "Blow", "Blow", "2001", "https://pad.mymovies.it/filmclub/2001/09/011/locandina.jpg", ['biografico', 'drammatico'] , "4,1", new Cast("Johnny Depp", "Penélope Cruz", ['Franka Potente','Ray Liotta','Rachel Griffiths']) );
 
- $movie4 = new Movie("Ridley Scott", "American Gangstar", "2007", "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", ['Poliziesco' ,'Drammatico'] , "4,6", new Cast("Denzel Washington", "Russel Crowe", ['Chiwetel Ejiofor','Josh Brolin','Cuba Gooding Jr.']) );
+  $movie4 = new Movie("Jonathan Demme", "Philadelpia", "Philadelpia", "1993", "https://pad.mymovies.it/filmclub/2006/08/219/locandina.jpg", ['drammatico'] , "4,5", new Cast("Tom Hanks", "Denzel Washington", ['Jason Robards','Mary Steenburgen','Ron Vawter']) );
 
- $movie5 = new Movie("Ridley Scott", "American Gangstar", "2007", "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", ['Poliziesco' ,'Drammatico'] , "4,6", new Cast("Denzel Washington", "Russel Crowe", ['Chiwetel Ejiofor','Josh Brolin','Cuba Gooding Jr.']) );
 
- $movies = [$movie1, $movie2, $movie3, $movie4, $movie5]
+
+ $movies = [$movie1 , $movie2, $movie3, $movie4]
 
 //  var_dump($movie1)
 //  ?>
