@@ -9,7 +9,6 @@ class Cast{
   * @param String $coStar
   * @param Array  $actors
   */
-
   public function __construct($_leadingActor, $_coStar , $_actors)
    {
     $this->leadingActor = $_leadingActor;

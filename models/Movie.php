@@ -19,7 +19,6 @@ public $cast;
  * @param Array $genre
  * @param Cast $cast
  */
-
 public function __construct($_director ,$_itTitle, $_title, $_date, $_poster, $_genre  , $_vote, Cast $_cast){
   $this->director = $_director;
   $this->itTitle = $_itTitle;
@@ -32,10 +31,10 @@ public function __construct($_director ,$_itTitle, $_title, $_date, $_poster, $_
  }
 
 
-public static function getTitle($_title, $_itTitle){
+public  function getTitle($_title, $_itTitle){
   if($_itTitle == $_title){
     $_itTitle = "";
-  }else{
+   }else{
    return $_itTitle ;
   }
   
